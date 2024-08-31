@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up :: CoinsKash</title>
+    <link rel="stylesheet" href="styles.css">
+   
+    
+</head>
+<body>
+    
+    
+    <main>
+        
+        <section class="col_left">
+            <div class="header">
+                <a href="index.html">    
+                <img class="formLogo" src="./Assests/images/CoinsKash_White_bg.svg" alt="logo">
+                </a>
+            </div>
+            <div class="top_pan">
+                
+                <h1 class="sign-up_title">Sign Up</h1>
+                <p>To log into your account, Kindly fill in the form provided below</p>
+    
+                <div class="thru_gmail">
+                    <img src="./Assests/images/google_icon_flat-color.svg" alt="google icon" />
+                    <span>Continue with Google</span>
+                </div>
+                <div class="line">
+                    <span class="side-line"></span>
+                    <span class="text-in-line">OR</span>
+                    <span class="side-line"></span>
+                </div>
+            </div>
+<div class="error_msg"></div>
+            <form action="" id="form">
+                <div class="formControl">
+                  <input type="text" name="firstName" id="firstName" placeholder="First name">
+                </div>
+                
+                <div class="formControl">
+                  <input type="text" name="lastName" id="lastName" placeholder="Last name">
+                </div>
+                <div class="formControl">
+                  <input type="email" name="email" id="email" placeholder="Email address">
+                </div>
+                <div class="form_Country">
+                  <div class="formControl">
+                      <select id="country" name="country" placeholder="Country" value="Country">
+                          <option value="">Select your country</option>
+                          </select> 
+                </div>
+                   
+                  <!-- <div class="formControl">
+                      <input type="tel" name="telNumber" id="telNumber" placeholder="Phone number" required class="telNumber">
+                      <small></small>
+                  </div> -->
+                  <div class="formControl">
+                      <input type="password" name="password" id="password" placeholder="Password">
+                  </div>
+                  <div class="formControl">
+                      <div class="psw_input">
+                          <input type="password" name="password" id="confirmPassword" placeholder="Confirm password">
+                      </div>
+                      <div class="checkInput">
+                          <input type="checkbox" name="check" id="togglePswd">
+                          <label for="togglePswd" class="visible">Show Password</label>
+                      </div>
+                  </div>
+                  <div class="terms">
+                    <label for="tc">
+                        <input class="tc" type="checkbox">
+                        By proceeding, You have agreed to the coinskash <a href="#">Terms of Use</a> and <a href="#">Private Policy</a>
+                    </label>
+                  </div>
+                  <!-- <p class="termsCons">By proceeding, You have agreed to the coinskash <a href="#">Terms of Use</a> and <a href="#">Private Policy</a></p> -->
+                  <div class="formControl">
+                      <button type="submit" id="submit_btn">Create Account</button>
+                  </div>
+                  <p class="faq">Already have an account? <br/> <a href="login.html">Log In</a></p>
+            </form>
+        </section>
+
+        
+    </main>
+
+    <!-- Java Script for International telephone code -->
+
+
+    <!-- Java Script for toggle Password on checkbox -->
+    <!-- <script src="togglePassword.js"></script> -->
+    <script src="./scripts/scripts.js"></script>
+   
+</body>
+</html>

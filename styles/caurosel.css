@@ -1,0 +1,107 @@
+.testimony {
+    margin: auto;
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.testimonial  h3 {
+    font-size: 48px;
+    color:#191F2B;
+    text-align: center;
+    margin: 50px;
+    margin-bottom: 20px;;
+}
+.testimonial p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 16px;
+    color:#8C8F95;
+    text-align: center;
+}
+
+.slides {
+    background-color: beige;
+    width: 50%;
+    height: auto;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0 5px;
+    display: none;
+}
+
+
+.hide-slides {
+    animation-name: slide;
+    animation-duration: 10s;
+}
+@keyframes slide {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 2;
+    }
+}
+    .stack {
+        display: block;
+        position: relative;
+    }
+    .quote-mark {
+        position: relative;
+        top: 50px;
+        left: -100px;
+        font-size: 200px;
+        color: goldenrod;
+        margin-top: -100px;
+        text-align: left;
+        font-family: 'Trebuchet MS';
+    }
+    
+    .stars {
+        font-size: 30px;
+        color: goldenrod;       
+    }
+
+    .image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-top: -30px;
+
+    }
+    
+    .cite {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    blockquote {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    
+
+.scroll {
+    position: relative;
+    top: 100px;
+    left: 43%;
+    display: inline-block;
+}
+    .arrow {
+        font-size: 30px;
+        padding: 10px 20px;
+        border-radius: 50%;
+        margin-left: 30px;
+        background-color: gray;
+        color: white;
+        cursor: pointer;
+    }
+    .arrow:hover, .arrow:active {
+        background-color: blueviolet;
+    }
+   

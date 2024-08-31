@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', 'Encode Sans Semi Condensed', 'Spline Sans',
+    sans-serif;
+  font-size: 1rem;
+}
+.over {
+  display: none;
+}
+.overlay {
+  position: fixed;
+  width: 100vw;
+  min-height: 100vh;
+  background: #858585;
+  opacity: 0.95;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #030680;
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+.inner-overlay {
+  padding: 20px;
+  border-radius: 30px;
+  width: 450px;
+  max-width: 100%;
+  background: #a8a8a8;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  min-height: 100vh;
+}
+.col_left {
+  padding: 1.5rem;
+}
+.col_right {
+  background: url(../Assests/images/coinskash_dot_square_bg.svg);
+}
+a {
+  text-decoration: none;
+}
+.header_login {
+  margin-bottom: 2.5rem;
+}
+.header_login img {
+  width: 100%;
+  max-width: 200px;
+}
+.login_title {
+  margin-block: 2rem;
+}
+.col_left p {
+  font-size: 14px;
+  margin-block: 0.75rem;
+  text-align: center;
+}
+
+.thru_gmail {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 20px;
+  background: #c5c5c5;
+  cursor: pointer;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.thru_gmail:hover {
+  background: blueviolet;
+  color: #fff;
+  box-shadow: 0 0 2px #a8a8a8;
+}
+.thru_gmail img,
+.thru_gmail span {
+  display: block;
+}
+.thru_gmail img {
+  width: 100%;
+  max-width: 30px;
+}
+.thru_gmail span {
+  font-size: 14px;
+}
+.break {
+  text-align: center;
+  margin-block: 0.75rem;
+}
+.form_input {
+  padding-block: 5px;
+}
+.form_input input {
+  padding: 0.5rem;
+  width: 100%;
+}
+.form_input input:invalid {
+  border: 2px dotted red;
+}
+
+.form_check * {
+  display: flex;
+  /* margin-right:5px ; */
+}
+.form_check {
+  display: flex;
+  align-items: center;
+}
+.form_check label {
+  font-size: 10px;
+}
+
+.tog_check {
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+}
+.forget a:hover {
+  font-weight: bold;
+}
+.form_input button {
+  width: 100%;
+  padding: 12.5px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: blueviolet;
+  cursor: pointer;
+}
+.form_input button:hover {
+  background: rgb(110, 34, 180);
+  font-weight: bold;
+  transition: 1s ease;
+}
+p.sign-up_faq {
+  text-align: center;
+  font-size: 10px;
+}
+.sign-up_faq a {
+  font-size: 14px;
+}
+.sign-up_faq a:hover {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.col_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem;
+}
+.col_right--logo img {
+  width: 100%;
+  max-width: 400px;
+}
+/* Form input validation indicators */
+
+.form_input small {
+  color: red;
+  font-size: 0.7em;
+  visibility: hidden;
+}
+.form_input.success input {
+  border: 2px solid#2ecc71;
+}
+
+.form_input.error input {
+  border: 2px solid #e74c3c;
+}
+
+.form_input.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.loader-icon {
+  border: 2px dotted green;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+/* Media Query */
+
+/* min-width = 450px */
+@media screen and (min-width: 450px) {
+  .col_left {
+    padding-inline: 3rem;
+  }
+}
+@media screen and (min-width: 500px) {
+  .col_left {
+    padding-inline: 1.5rem;
+    align-self: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .col_left {
+    padding-inline: 3.5rem;
+  }
+  .col_right--logo img {
+    width: 150%;
+    max-width: 400px;
+  }
+}

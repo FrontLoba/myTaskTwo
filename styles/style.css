@@ -1,0 +1,802 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* html {
+    font-size: calc(15px * 0.390625vw);
+} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Poppins', 'Encode Sans Semi Condensed', 'Spline Sans', sans-serif; 
+    /* overflow-x: hidden; */
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.04);
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    background-color: #fff;
+    opacity: 0.9;
+    
+}
+
+ul{
+    display: flex;
+
+}
+header ul li{
+    list-style: none;
+    padding: 1em 2em;
+    /* margin-right: 2em; */
+}
+header ul li a{
+    text-decoration: none;
+    color: #191F2B;
+    font-size: 1em;
+}
+
+header ul li a:hover {
+    font-weight: 500;
+}
+
+
+.btn-like {
+    padding: 1em 2em;
+    background: #604AED;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+.btn-like a {
+    color: white;
+}
+.btn-like a:hover {
+    color: #604AED;
+}
+
+.btn-like:hover {
+    border: 2px solid #604AED;
+    background-color: #fff;
+}
+
+.left-line {
+    border-right: 1px solid #604AED;
+}
+
+.hide-icon {
+   display: none;
+}
+.mobile-menu {
+    display: none;
+}
+
+
+/* The hero landing page section */
+.hero {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center;     */
+    width: 85%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+ul.hero-desktop {
+    background-image: url(/Assests/dotted_splash_bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    list-style: none;
+
+}
+
+ul.hero-desktop img {
+    list-style: none;
+}
+
+img.phone-right {
+    max-width: 360px;
+    margin-top: 160px;
+    margin-right: -100px;
+    
+}
+img.phone-left {
+    max-width: 360px;
+    position:relative;
+    z-index: 999;
+    right:70px;
+    top:20px;
+    left: -30px;
+}
+.hero-article h1 {
+    font-size: 68px;
+    font-weight: 800;
+    font-weight: 900;
+    line-height: 1.5em;
+    color: #191F2B;
+    margin-top: 50px;
+}
+.crypto {
+    color: #604AED;
+}
+.ngn {
+    Background: linear-gradient(106.12deg, #604AED -5.6%, #d003f0 108.17%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.hero-article p {
+    margin-top: 30px;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #8C8F95;
+}
+
+.hero-mobile, .app-icons {
+    display: none;
+}
+
+/* The Conversion and scale measure - section */
+.conversion {
+    background-color: #191F2B;
+    background-image: url(Assests/path_bg.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    /* text-align: center; */
+    padding-bottom: 50px;
+}
+.conversion h2 {
+    padding: 80px 0;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    /* letter-spacing: 2px; */
+    max-width: 65%;
+    margin: 0 auto;
+}
+.scales {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.manual-scale img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+}
+.digital-scale img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+/* CSS section for - How it works */
+
+.how-it-works h2 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #191F2B;
+    text-align: center;
+    margin: 100px 0 20px 0;
+}
+.how-it-works p {
+    font-size: 16px;
+    text-align: center;
+    color: #B5B5B5;
+}
+.howItWorks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 85%;
+    margin: 50px auto 0 auto;
+}
+.howItWorks div {
+    /* border: 1px solid black; */
+    width: 25vw;
+    padding: 1.5em;
+    justify-content: space-between;
+}
+.howItWorks h3 {
+    font-size: 24px;
+    color: #191F2B;
+    margin: 30px 0;
+}
+.howItWorks p {
+    text-align: justify;
+    line-height: 24px;
+
+}
+.work-img {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+    display: inline-block;
+}
+.work-1 {
+    align-self: flex-start;
+}
+.work-2 {
+    align-self: center;
+
+}
+.work-3 {
+    align-self: flex-end
+}
+.curve-up, .curve-down {
+    max-width: 486px;
+    position: absolute;
+}
+.curve-up {
+    top: 2000px;
+    left: 500px;
+}
+.curve-down {
+    top: 2350px;
+    left: 300px;
+}
+
+/* CSS Section for the Rate table */
+
+.rate-table-h3 {
+    font-size: 48px;
+    text-align: center;
+    color: #191F2B;
+    margin-top: 50px;
+}
+.rate-table-p {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #B5B5B5;
+    margin-top: 10px;
+}
+.wide-screen {
+    margin: 80px auto 0 auto;
+    text-align: center;
+}
+.wide-view {
+    width: 100%;
+    height: auto;
+    max-width: 1109px;
+}
+.rate-mobile-view {
+    display: none;
+}
+
+/* CSS section for Why CoinsKash section */
+.y-CoinsKash {
+    text-align: center;
+}
+.y-CoinsKash h2 {
+    font-size: 48px;
+    color: #191F2B;
+    margin-top: 100px;
+}
+.y-CoinsKash p {
+    font-size: 16px;
+    line-height: 19px;
+    color: #B5B5B5;
+    margin-top: 30px;
+}
+.y-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.y-coin {
+    width: 300px;
+    height: auto;
+    margin: 30px 30px;
+    padding: 30px;
+    box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.04);
+}
+.y-coin div {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.y-coin h3 {
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    color: #191F2B;
+    margin-top: 20px;
+}
+.y-coin p {
+    font-size: 16px;
+    text-align: center;
+    color: #8C8F95;
+    margin-top: 30px;
+
+}
+.yCoin-1 {
+    background-color: #F5FFFB;
+}
+.yCoin-2 {
+    background-color: #F8F6FF;
+}
+.yCoin-3 {
+    background-color: #FCF4FF;
+}
+.yCoin-4 {
+    background-color: #F8F6FF;
+}
+.yCoin-5 {
+    background-color: #EFFCFF;
+}
+.yCoin-6 {
+    background-color: #FFFDEA;
+}
+
+/* CSS section for getApp */
+.app-section {
+    background: url(Assests/coinskash_dot_square_bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+.getApp {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 0 auto;
+}
+.getApp div {
+    width: 45%;
+    margin-top: 100px;
+}
+.getApp img {
+    display: inline-block;
+}
+.app-mobile {
+    display: none;
+}
+.getApp-article h2 {
+    font-size: 48px;
+    line-height: 55px;
+    color: #FFFFFF;
+}
+.getApp-article p {
+    font-size: 16px;
+    line-height: 160%;
+    color: #DFDBFB;
+    margin-top: 30px;
+}
+.getApp-logo {
+    margin-top: 50px;
+    margin-right: 20px;
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+}
+.getApp-phone {
+    display: flex;
+}
+.phone-up {
+    position: relative;
+    z-index: 999;
+    left: 40px;
+    width: 100%;
+    height: auto;
+    max-width: 290px;
+}
+.phone-down {
+    position: relative;
+    right: 10px;
+    width: 100%;
+    height: auto;
+    max-width: 245px;
+}
+
+/* CSS for Teestimonial section */
+
+.testimonial {
+    margin-bottom: 200px;
+}
+.testimonial  h3 {
+    font-size: 48px;
+    color:#191F2B;
+    text-align: center;
+    margin: 50px;
+    margin-bottom: 20px;;
+}
+.testimonial p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 16px;
+    color:#8C8F95;
+    text-align: center;
+}
+.testimony {
+    position: relative;
+    max-width:35%;
+    margin: 0 auto;
+    top: 70px;
+    height: 400px;
+    /* border: 1px solid black; */
+    overflow: hidden;
+
+}
+.slide {
+    position: absolute;
+    top: 50px;
+    max-width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+    
+}
+.slide:nth-child(even) {
+    background-color: #fdfbd8;
+}
+.slide:nth-child(odd) {
+    background-color: #fcbdfc;
+}
+
+.hide-slides {
+    animation-name: slide;
+    animation-duration: 1s;
+}
+@keyframes slide {
+    from {
+        /* transform: translate(-200px 50px); */
+        transform: translateX(-200px);
+    }
+   
+    to {
+        transform: translateX(15px);
+    }
+}
+.stack {
+    display: block;
+    position: relative;
+}
+.quote-mark {
+    position: relative;
+    top: 10px;
+    left: -100px;
+    font-size: 120px;
+    color: goldenrod;
+    margin-top: -100px;
+    text-align: left;
+    font-family: 'Trebuchet MS';
+}
+
+.stars {
+    font-size: 30px;
+    color: goldenrod;       
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: -60px;
+
+}
+
+.cite {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+blockquote {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.arrow {
+    position: absolute;
+    font-size: 30px;
+    padding: 2.5px 10px;
+    border-radius: 50%;
+    color: #57448d;
+    cursor: pointer;
+    top: 40%;
+}
+.arrow:hover, .arrow:active {
+    background-color: #57448d;
+    color: white;
+}
+/* .arrow-left {
+    left: -1%;
+} */
+.arrow-right {
+    left: 90%;
+}
+.dot-container {
+    width: 30%;
+    margin: 0 auto;
+    border:2px solid black
+}
+.dots_dot {
+    width: 20px;
+    height: 20px;
+    margin: auto 10px;
+    border-radius: 50%;
+    border:none;
+    display:inline-block;
+
+} 
+
+/* CSS section for footer */
+
+footer {
+    background-color: #191F2B;
+    padding-bottom: 50px;
+}
+.foot-up, .foot-down {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid white;
+    padding: 80px 0;
+}
+.foot-up > ul, .foot-down > ul {
+    display: inline-block;
+    color: white;
+    list-style: none;
+}
+.foot-up > ul > li > a,
+.foot-down > ul {
+    color: #F5F5F5;
+    font-size: 14px;
+    line-height: 40px;
+    text-decoration: none;
+}
+.foot-down {
+    border: none;
+}
+.list-head {
+    font-weight: bold;
+    font-size: 18px;
+}
+.foot-Add {
+    max-width: 250px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 200;
+    color: white;
+    margin-top: -10px;
+}
+.coinWhite img {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+}
+ul.im-icons {
+    display: flex;
+    gap: 20px;  
+}
+
+@media screen and (max-width:768px) {
+
+    /* This is the header and navbar section */
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.04);
+        height: 100px;
+    }
+    .open-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 0.5em;
+        font-size: 2.5em;
+        cursor: pointer;        
+    }
+    .close-icon{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0.25em;
+        font-size: 4em;
+        cursor: pointer;
+        transition: 5s ease;
+    }
+    .logo {
+        padding-left: 1.5em;
+    }
+
+    .primary-menu, .secondary-menu {
+        display: none;
+    }
+
+    .mobile-menu li {
+        padding: 1.5em 1em;
+        border-bottom: 1px solid white;
+        width: 100%;
+    }
+
+    .mobile-menu a {
+        color: white;
+        margin-left: 20px;
+    }
+    .mobile-menu li a:hover {
+        text-decoration: underline;
+        font-weight: 500px;
+    }
+    .mobile-list{
+        display: block;
+        position: absolute;
+        top: 100px;
+        padding: 1.5em 1em 0 1em;
+        width: 100%;
+        min-height: 100vh;
+        background-color: #191F2B;
+    }
+
+    /* CSS SECTION The hero section (mobile view) */
+
+    ul.hero-desktop {
+        display: none;
+    }
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 2em;
+    }
+
+    .hero-article h1 {
+        margin-top: 20px;
+        /* font-size: 4.25em; */
+        font-weight: 900;
+        line-height: 1.3em;
+    }
+
+    .app-icons {
+        display: block;
+        margin-top: 20px;
+    }
+    .app-icons img {
+        width: 100%;
+        height: auto;
+        max-width: 100px;
+        margin-right: 10px;
+    }
+
+    .hero-mobile {
+        display: block;
+        margin-top: 80px;
+        padding-bottom: 50px;
+
+    }
+    .mobile-img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        
+    }
+
+    /* The Conversion and scale measure - section  (mobile view */
+    .conversion h2 {
+        max-width: none;
+    }
+    section.conversion {
+        padding: 0 1.5em;
+    }
+    .digit {
+        position: relative;
+        top: -50px;
+    }
+    
+    .manual-scale {
+        display: none;
+    }
+
+    /* CSS Section for How it works */
+    .howItWorks div {
+        width: 80vw;
+        padding: 2.5em;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .work-1, .work-2, .work-3 {
+        align-self: center;
+    }
+    .curve-line {
+        display: none;
+    }
+
+    /* CSS section for Rate table list */
+    .rate-table-h3, .rate-table-p, .wide-screen {
+        display: none;
+    }
+    .rate-mobile-view {
+        display: block;
+    }
+    .rate-mobile-view {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .m-view-img {
+        width: 100%;
+        height: auto;
+        max-width: 380px;
+        margin-top: 50px;
+    }
+    .m-view-h3 {
+        font-size: 30px;
+        font-weight: bold;
+        color: #191F2B;
+    }
+    .m-view-p {
+        font-size: 15px;
+        line-height: 20px;
+        color: #B5B5B5;
+        margin-top: 20px;
+        padding: 0 100px;
+    }
+
+    /* CSS section for getApp section */
+    .getApp-phone {
+        display: none;
+    }
+    .app-mobile {
+        display: block;
+        text-align: center;
+    }
+    .app-mobile img {
+        width: 100%;
+        height: auto;
+        max-width: 200px;
+        position: relative;
+    }
+    .getApp {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .getApp div {
+        width: 100%;
+        margin-top: 100px;
+    }
+    .getApp-logo {
+        margin-top: 2.5em;
+        margin-right: 10px;
+    }
+   
+    /* CSS for footer (mobile view) */
+
+    .foot-up, .foot-down {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+    }
+    .foot-up ul {
+        flex: 40%;
+        margin-bottom: 40px;
+        
+    }
+    .foot-down ul {
+        flex: 80%;
+        margin-bottom: 20px;
+    }
+  
+}

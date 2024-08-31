@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In :: CoinsKash</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <section class="col_left">
+        <div class="header login-header">
+          <a href="index.html">
+            <img
+              class="formLogo"
+              src="./Assests/images/CoinsKash_White_bg.svg"
+              alt="logo"
+            />
+          </a>
+        </div>
+        <div class="top_pan">
+          <h1 class="sign-up_title">Log In</h1>
+          <p>
+            To log into your account, Kindly fill in the form provided below
+          </p>
+
+          <div class="thru_gmail">
+            <img
+              src="./Assests/images/google_icon_flat-color.svg"
+              alt="google icon"
+            />
+            <span>Continue with Google</span>
+          </div>
+          <div class="line">
+            <span class="side-line"></span>
+            <span class="text-in-line">OR</span>
+            <span class="side-line"></span>
+          </div>
+        </div>
+        <div class="error_msg"></div>
+        <form action="" id="form">
+          <div class="formControl login-formInput">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email address"
+            />
+          </div>
+          <div class="formControl">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+          </div>
+          <div class="check_wrapper">
+            <div>
+              <input type="checkbox" name="check" id="togglePswd" />
+              <label for="togglePswd" class="visible toggle-label"
+                >Show Password</label
+              >
+            </div>
+            <div class="forget">
+              <a href="reset.html">Forget Password?</a>
+            </div>
+          </div>
+
+          <div class="formControl login-formInput">
+            <button type="submit" id="submit_btn">Login</button>
+          </div>
+          <p class="faq">
+            Do not have an account? <br />
+            <a href="signUp.html">Create an Account</a>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>

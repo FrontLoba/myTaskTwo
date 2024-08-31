@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #6e19f8;
+  --text-color: #f7f7f5;
+}
+
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  color: #494949;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(./Assests/images/coinskash_dot_square_bg.svg);
+  background-size: cover;
+  background-position: right;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+main {
+  min-height: 100vh;
+  padding: 0.85rem;
+  background: var(--text-color);
+  width: max(60%, 650px);
+  height: 100vh;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.col_left {
+  width: max(85%, 250px);
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+.top_pan {
+  text-align: center;
+}
+
+.header img {
+  width: max(30%, 150px);
+}
+.login-header {
+  margin-bottom: 80px;
+}
+.leftArrow {
+  margin-bottom: 50px;
+}
+.leftArrow a {
+  color: #000;
+}
+.leftArrow a:hover {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.thru_gmail {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: max(200px, 50%);
+  background: #cacaca;
+  border-radius: 15px;
+  margin-block: 0.5rem;
+  margin-inline: auto;
+  cursor: pointer;
+  font-weight: 600;
+}
+.thru_gmail img {
+  width: 35px;
+  flex-shrink: 0;
+}
+.thru_gmail:hover {
+  background: #acacac;
+  transition: 1s ease;
+}
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+.side-line {
+  height: 2px;
+  width: 100%;
+  background: #acacac;
+  border-radius: 10px;
+}
+.text-in-line {
+  margin: 0 4px;
+}
+.formControl {
+  margin-bottom: 5px;
+}
+.login-formInput {
+  margin: 20px 0;
+}
+
+.formControl input,
+.formControl select {
+  padding: 0.75rem 1.5rem;
+  width: 100%;
+  font: inherit;
+  color: var(--background);
+  border: none;
+  background: transparent;
+  border-radius: 5px;
+  border: 2px solid var(--background);
+  outline: none;
+  caret-color: var(--background);
+}
+
+.formControl input::placeholder {
+  font-size: 14px;
+  color: var(--background);
+  font-weight: 600;
+}
+
+.formControl .checkInput input {
+  padding: unset;
+  width: unset;
+  margin-bottom: 2px;
+}
+
+.checkInput {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+}
+.check .terms {
+  margin: 0;
+}
+.check_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq {
+  text-align: center;
+  font-size: 10px;
+}
+.faq a {
+  font-size: 14px;
+}
+.faq a:hover,
+.terms a:hover {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.formControl button {
+  width: 100%;
+  padding: 12.5px 20px;
+  margin: 5px 0;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #7526be;
+  cursor: pointer;
+}
+.formControl button:hover {
+  background: var(--background);
+  font-weight: bold;
+  transition: 0.7s ease;
+}
+
+.col_right {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.col_right img {
+  width: max(300px, 50%);
+
+  display: block;
+}
+
+.incorrect input {
+  border: 3px double red;
+  /* background: red; */
+  opacity: 0.9;
+}
+.incorrect input {
+  caret-color: red;
+}
+.error_msg {
+  color: red;
+  font-size: 12px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    /* overflow: hidden; */
+    padding: 0;
+  }
+  main {
+    padding: 20px;
+    /* width: max(60%, 650px); */
+    width: min(650px, 100%);
+  }
+  .col_left {
+    /* width: max(85%, 250px); */
+    width: min(95%);
+  }
+}

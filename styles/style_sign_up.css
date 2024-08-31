@@ -1,0 +1,295 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap"); */
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', 'Encode Sans Semi Condensed', 'Spline Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main_pan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  border: 3px solid green;
+
+}
+.leftpan, .rightpan {
+  width: 45%;
+}
+.leftpan {
+  /* flex: 50%; */
+  
+  background-color: #ffffff;
+  /* padding: 0 4em 2em 4em; */
+}
+
+.leftpan a {
+  text-decoration: none;
+  color:#3F3F3F
+}
+
+.leftpan a:hover {
+  font-weight: 500;
+}
+
+.leftpan a:visited {
+  color: blue;
+}
+
+.formLogo {
+  margin-top: 3.5em;
+}
+
+.formLogo img {
+    max-width: 300px;
+    height: auto;
+  width: 100%;
+}
+
+.main_pan h1 {
+  font-size: 2.5em;
+  color: #191F2B;
+  margin-bottom: 10px;
+  margin-top: 0.5em;
+}
+
+.main_pan p {
+  font-size: 1em;
+  line-height: 1.75em;
+  color: #B5B5B5;
+}
+
+.leftArrow {
+  display: inline-block;
+  margin-top: 50px;
+  font-size: 1em;
+}
+
+.leftArrow .bk-ent {
+  font-size: 2em;
+}
+
+.reset {
+  margin-top: 30px;
+}
+
+.main_pan button {
+  width: 100%;
+  background: #F5F5F5;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 0.6em;
+  padding: 0.8em 0;
+  border: none;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.main_pan button span {
+  font-size: 1em;
+  line-height: 19px;
+  text-align: center;
+  color: #181818;
+  margin-top: 0.8em;
+  margin-left: 0.5em;
+}
+
+.main_pan button img {
+    display: inline-block;
+  height: 45px;
+}
+
+.main_pan button:hover {
+  background-color: #8C8F95;
+  /* border: 2px solid #604AED; */
+  color: #ffffff;
+}
+
+ .or {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #8C8F95;
+  margin: 20px 0;
+}
+
+.main_pan form input, .main_pan select {
+  display: block;
+  width: 100%;
+  /* margin-bottom: 1em; */
+  border-radius: 0.5em;
+  border: 1px solid #8C8F95;
+  padding: 1em;
+}
+.formControl {
+  /* margin-bottom: 1em; */
+  border-radius: 0.5em;
+  /* border: 1px solid #8C8F95; */
+  /* padding: 0.8em; */
+}
+
+/* input[type=password] {
+  margin: 1.5em 0;
+} */
+
+.main_pan select option {
+  /* font-family: 'Spline Sans', sans-serif; */
+  font-size: 1em;
+  border: none;
+}
+
+.main_pan input[type=submit] {
+  background: #604AED;
+  color: #ffffff;
+  font-weight: 400;
+  border: none;
+  margin-top: 2em;
+}
+
+.main_pan input[type=checkbox] {
+  /* margin-top:em; */
+  width: 20px;
+  background: #3F3F3F;
+  font-weight: 500;
+  display: inline-block;
+}
+.checkInput {
+  position: relative;
+  top: -2px;
+}
+ .main_pan input[type=submit]:hover {
+  background-color: #100f7c;
+  cursor: pointer;
+}
+
+.main_pan span {
+  display: flex;
+  margin-top: -10px;
+}
+
+.main_pan label {
+  margin-left: 0.2em;
+  padding-top: 2.5px;
+  font-size: 0.75em;
+}
+
+.check_forget {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forgetP {
+  font-size: 14px;
+}
+label.visible {
+  font-size: 14px;;
+  
+}
+
+.check_forget a {
+  text-decoration: none;
+}
+
+.check_forget a:hover {
+  font-weight: 500;
+}
+
+.login {
+  font-size: 1em;
+  text-align: center;
+}
+
+.login a {
+  text-decoration: none;
+}
+
+.login a:hover {
+  font-weight: 500;
+}
+
+.formControl small {
+  margin-top: -10px;
+  margin-left: 10px;
+  color: red;
+  font-style: italic;
+  font-size: 0.75em;
+  visibility: hidden;
+}
+.formControl.success input {
+  border: 2px solid#2ecc71;
+}
+
+.formControl.error input {
+  border: 2px solid #e74c3c;
+}
+
+.formControl.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.rightpan {
+  /* flex: 50%; */
+  background: url("./Assests/images/coinskash_dot_square_bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit:contain;
+}
+
+.rightpan img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    display: block;
+    text-align: center;
+    margin-top: 50vh;
+    margin-left: 5vw;
+}
+
+@media (max-width: 768px) {
+    .main_pan h1 {
+        font-size: 2em;
+    }
+    .main_pan p, .login {
+        font-size: 0.75em;
+        line-height: 1.5em;
+    }
+  .main_pan {
+    display: flex;
+    /* width: 100%; */
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+  .leftpan {
+    flex: 100%;
+    padding: 0 2.5em;
+    }
+  .formLogo {
+    margin-top: 50px;
+    }
+  .rightpan {
+    padding: 20px;
+  }
+  .rightpan img {
+    width: 60%;
+    display: inline-block;
+    height: auto;  
+    margin-top: 40px;
+    }
+    .login {
+        margin-bottom: 30px;
+    }
+}
+/*# sourceMappingURL=style.css.map */

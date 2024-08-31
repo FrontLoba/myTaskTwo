@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Encode Sans Semi Condensed', 'Spline Sans', sans-serif;
+    font-size: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    min-height: 100vh;
+}
+.col_left {
+    padding: 1.5rem;
+}
+.col_right {
+    background: url(../Assests/images/coinskash_dot_square_bg.svg)
+}
+a {
+    text-decoration: none;
+}
+
+.header_login {
+    margin-bottom: 2.5rem;
+}
+.header_login img {
+    width: 100%;
+    max-width: 200px;
+}
+.reset_title {
+    margin-block: 2rem;
+}
+.col_left p {
+    font-size: 14px;
+    margin-block: 0.75rem;
+    text-align: center;
+}
+.form_wrapper {
+    margin-block: 1.5rem;
+}
+.form_wrapper input {
+    padding: 0.75rem;
+    width: 100%;
+}
+
+.form_wrapper button {
+    width: 100%;
+    padding: 12.5px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: blueviolet;
+    cursor: pointer;
+}
+.form_wrapper button:hover {
+    background: rgb(110, 34, 180);
+    font-weight: bold;
+    transition: 1s ease;
+}
+p.reset_faq {
+    text-align: center;
+    font-size: 10px;
+}
+.reset_faq a {
+    font-size: 14px;
+}
+.reset_faq a:hover {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.col_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+}
+.col_right--logo img {
+    width: 100%;
+    max-width: 400px;
+}
+small {
+    font-size: 8.5px;
+    visibility: hidden;
+}
+.leftArrow a {
+    color: #000;
+}
+.leftArrow a:hover {
+    font-weight: bold;
+}
+
+/* Media Query */
+
+/* min-width = 450px */
+@media screen and (min-width: 450px) {
+    .col_left {
+        padding-inline: 3rem;
+    }
+    
+}
+@media screen and (min-width: 500px) {
+    .col_left {
+        padding-inline: 1.5rem;
+        align-self: center;
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    .col_left {
+        padding-inline: 3.5rem;
+    }
+    .col_right--logo img {
+        width: 150%;
+        max-width: 400px;
+    }
+}

@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'Encode Sans Semi Condensed', 'Spline Sans',
+    sans-serif;
+  font-size: 1rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  min-height: 100vh;
+}
+.col_left {
+  padding: 1.5rem;
+}
+.col_right {
+  background: url(../Assests/images/coinskash_dot_square_bg.svg);
+}
+a {
+  text-decoration: none;
+}
+.header_login {
+  margin-bottom: 2.5rem;
+}
+.header_login img {
+  width: 100%;
+  max-width: 200px;
+}
+.sign-up_title {
+  margin-block: 0.5rem;
+}
+.col_left p {
+  font-size: 14px;
+  margin-block: 0.75rem;
+  text-align: center;
+}
+.thru_gmail {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 7.5px;
+  background: #c5c5c5;
+  cursor: pointer;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.thru_gmail:hover {
+  background: blueviolet;
+  color: #fff;
+  box-shadow: 0 0 2px #a8a8a8;
+}
+.thru_gmail img,
+.thru_gmail span {
+  display: block;
+}
+.thru_gmail img {
+  width: 100%;
+  max-width: 30px;
+}
+.thru_gmail span {
+  font-size: 14px;
+}
+.break {
+  text-align: center;
+  margin-block: 0.75rem;
+}
+/* .formControl {
+    padding-block: 2px;
+} */
+.formControl {
+  margin: 5px;
+}
+.formControl input,
+.formControl select {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.formControl select ~ option {
+  padding: 25px;
+  font-size: 12px;
+}
+
+.formControl .checkInput input {
+  padding: unset;
+  width: unset;
+}
+
+.checkInput * {
+  display: block;
+  margin-right: 5px;
+}
+.checkInput {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.checkInput label {
+  font-size: 11px;
+}
+
+.tog_check {
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+}
+.forget a:hover {
+  font-weight: bold;
+}
+.formControl button {
+  width: 100%;
+  padding: 12.5px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: blueviolet;
+  cursor: pointer;
+}
+.formControl button:hover {
+  background: rgb(110, 34, 180);
+  font-weight: bold;
+  transition: 1s ease;
+}
+
+.checkInput p.faq {
+  text-align: center;
+  font-size: 10px;
+}
+.faq a {
+  font-size: 14px;
+}
+.faq a:hover,
+.termsCons a:hover {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Form validation indicators */
+.formControl small {
+  margin-top: -10px;
+  margin-left: 10px;
+  color: red;
+  font-style: italic;
+  font-size: 0.75em;
+  visibility: hidden;
+}
+.formControl.success input {
+  border: 2px solid#2ecc71;
+}
+
+.formControl.error input {
+  border: 2px solid #e74c3c;
+}
+
+.formControl.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+/*  */
+
+.col_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem;
+}
+.col_right--logo img {
+  width: 100%;
+  max-width: 400px;
+}
+small {
+  font-size: 8.5px;
+  visibility: hidden;
+}
+
+/* Media Query */
+
+/* min-width = 450px */
+@media screen and (min-width: 450px) {
+  .col_left {
+    padding-inline: 3rem;
+  }
+}
+@media screen and (min-width: 500px) {
+  .col_left {
+    padding-inline: 1.5rem;
+    align-self: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .col_left {
+    padding-inline: 3.5rem;
+  }
+  .col_right--logo img {
+    width: 150%;
+    max-width: 400px;
+  }
+}
